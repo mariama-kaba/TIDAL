@@ -1,4 +1,37 @@
 Répartition des taches
 Debut du code HTML 
-CHOIX DU DESIGN & Le recaputilatif 
+CHOIX DU DESIGN & Le recaputilatif
+D'abord code en HTML statique avant de passer au dynamique 
+Ajout des APIS dans le PHP  notamment jquery, bootsrap,ou d'autre comme google pour avoir les "glyphicon"
+ Le but du projet  : Afficher une liste de produits(Fait) et de gérer un panier(non)
+ Difficulté rencontrer pour la liste des produits
+  1-  Création de la base de données
+            Comment structurer sa BD
+            (tjrs une erreur avec la création de la relation) 
+             Ajout de tous les produits à la main 
+  2- Gestion de la connection à la Base de données (Fichier database.php:qui sert de controleur )
+            Ajout de facon statique l'ouverture de la connection 
+            (a commenter avec Habib)
+  3- Dans l'index.php
+          thumbnail : Ajout d'une vignette à l'image
+          data-toggle : le menu deroulant de l'onglet cree l'onglet
+  
+  4-CE QUI RESTE A FAIRE
+                • Proposer une vitrine de produit sous forme de liste claire (ok)
+                      Normalement le catalogue doit contenir tous les élémentS 
+
+                • Permettre d’ajouter un produit à un panier
+                • Permettre la création d’un compte
+                • La consultation du panier
+                • La fusion de panier lorsque l’on se connecte ou l’on crée un compte.
+ Accessibilité : L’ensemble du site respectera les normes d’accessibilité de niveau AAA.
+Il sera écrit en HTML 5.
+toute page du site devra être accessible de la page d’accueil en 3 interactions au maximum
+(clic, raccourci, etc.).
+La navigation devra être possible sans souris ou sans clavier.
+                                  Base de donnée
+La base de donnée vous est fournie sous la forme d’un script SQL de génération
+de base de données.
+Vous êtes libre de modifier la base dans la limite de conserver les données existantes.
+
 

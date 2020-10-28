@@ -246,5 +246,39 @@
 </div>
 
 -->
+
+
+
+
+<?php
+
+require 'admin/database.php';
+
+echo '<nav>
+         <ul class="nav nav-pills">';
+// On crée une variable db où on enregistre la connection
+$db = Database::connect();
+
+// On fait une requette vers la base de données pour recuperer la liste des categories
+// Je stock le resultat dans une variable que j'ai appélé statement 
+
+$statement = $db ->query('SELECT * FROM categories');
+// On crée une variable categories, puis on y stock le resltat de la requette
+$categories = $statement -> fetchAll();
+//On parcourt la liste des categories dans la variable categories
+
+foreach( $categories as $c) {
+    // Pour la classe active, on fait un test pour savoir si on à l'id 1 pour l'afficher par defaut
+    if($c['id']  == 1) {
+        echo '<li role="presentation" class="active"><a href="#"'. $c['id'] .'"data-toggle="tab">' .$c['name'] . '</a></li>';
+    }
+    else {
+        echo'<li role="presentation"><a href="#"'. $c['id'] .'"data-toggle="tab">'.$c['name'] . '</a></li>';
+    }
+}
+echo ' </ul>
+</nav>';
+
+
 </body>
 </html>
