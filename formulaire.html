@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire </title>
+</head>
+<body  >
+<div>
+    <form  id="inscription"name ="formulaire" method="post" action="singin.php" >
+         <h1 id="test">Inscription</h1>
+    <fieldset>
+        <legend>Connexion</legend>
+         <div>
+         <label for="nom">Username</label> :
+            <input type="text"class="form"  name="pseudo"  placeholder="Enter Username" >
+            <span class="aidform"></span>
+         </div>
+        <div>
+            <label for="courriel">Email adress </label> :
+               <input type="email" name="email" class="form" placeholder="prenom.nom@domaine.fr" >
+               <span class="aidform"></span>
+        </div>
+           <div>
+            <label for="password">Password</label> :
+               <input type="password" name="pass" class="form" placeholder="Enter password" >
+               <span class="aidform"></span>
+           </div>
+        </fieldset>
+        <div >
+            <input class="form" id="ckb1" type="checkbox" name="remember-me">
+            <label for="ckb1"> Remember me </label>
+            <span class="aidform"></span>
+        </div>
+</div>
+
+
+
+<div >
+    <button class="login100-form-btn" name="submit">
+        Save
+    </button>
+    <a class="form" href="../index.php"><span class="glyphicon glyphicon-arrow-left"></span> Retour</a>
+</div>
+<div class="login100-form-title">
+    <span class="login100-form-title-1">
+        Inscription 
+    </span>
+</div>
+      
+
+</body>
+</html>

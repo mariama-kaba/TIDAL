@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>DIOP-KABA</title>
 </head>
 
@@ -94,7 +94,7 @@
                    {
                        echo '<div class="col-sm-6 col-md-4">
                                <div class="thumbnail"> 
-                                   <img src="images/' . $item['image'] . '" alt="..." style="height: 400px">
+                                   <img src="images/' . $item['image'] . '" alt="..." style="height: 200px">
                                    <div class="price">' . number_format($item['price'], 2, '.', ''). ' €</div>
                                    <div class="caption">
                                        <h4>' . $item['name'] . '</h4>
